@@ -7,7 +7,7 @@ Just like we can take 'conic sections' of a cone, and get circles, ellipses, par
 ## 1. System Overview (Lens Data Editor)
 
 
-| Surf | Type       | Radius (mm) | Thickness (mm) | Glass  | Semi-Diameter | Conic | Param 1 (X-Radius) |
+| Surf | Type       | Radius (mm) | Thickness (mm) | Glass  | Semi-Diameter | Conic | Param 1 (X-Radius (mm)) |
 |------|------------|-------------|----------------|--------|---------------|-------|--------------------|
 | OBJ  | Standard   | Infinity    | Infinity       |        |               |       |                    |
 | 1    | Toroidal   | 50.0        | 5.0            | N-BK7  | (auto)        | 0     | 100.0              |
@@ -16,8 +16,7 @@ Just like we can take 'conic sections' of a cone, and get circles, ellipses, par
 
 - Toroidal surface: Y-radius = 50 mm, X-radius = 100 mm (via Param 1). Y-Z plane focuses sooner.
 - Surface 2 is the back (exit) face — required for real lens. If we did not include this surface, we are saying that the light never exits the glass.
-- Image plane at 200 mm from back surface.
-- System: on-axis field, 0.55 μm, 10 mm entrance pupil
+- System: on-axis field, 0.55 μm wavelength, 10 mm entrance pupil
 
 ---
 ## 2. 3D Layout
@@ -57,4 +56,5 @@ But X-Z rays are defocused, so spots spread wildly in Y → RMS Y Size is huge.
 
 ## 3. Optical Path Difference (OPD) Diagrams
 Changing the thickness back to 200 mm, the Y-Z plane is nearly focused, but the X-Z plane is strongly defocused — producing a vertical line focus and the deep Py OPD curve below.
+<br>
 ![OPD-Diagram](./OPDFan.jpg)
